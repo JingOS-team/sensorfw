@@ -1,0 +1,33 @@
+Source: sensorfw
+Priority: optional
+Maintainer: unknown <dengbaoan@jingos.com>
+Build-Depends: debhelper-compat (= 12),
+               qt5-default,
+               libudev-dev,
+               libsystemd-dev,
+               doxygen,
+               graphviz,
+               pkg-config,
+               libhardware-dev,
+               android-headers,
+               libhybris-dev
+Standards-Version: 4.4.1
+Section: libs
+#Homepage: <insert the upstream URL, if relevant>
+#Vcs-Browser: https://salsa.debian.org/debian/sensorfw
+#Vcs-Git: https://salsa.debian.org/debian/sensorfw.git
+
+Package: sensorfw-dev
+Section: libdevel
+Architecture: any
+Multi-Arch: same
+Depends: sensorfw (= ${binary:Version}), ${misc:Depends}
+Description: <insert up to 60 chars description>
+ <insert long description, indented with spaces>
+
+Package: sensorfw
+Architecture: any
+Multi-Arch: same
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: <insert up to 60 chars description>
+ <insert long description, indented with spaces>
